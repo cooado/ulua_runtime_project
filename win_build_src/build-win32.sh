@@ -50,4 +50,4 @@ gcc lua_wrap.c \
 	-I../struct-0.2 \
 	-Wl,--whole-archive \
 	window/x86/libluajit.a \
-	-Wl,--no-whole-archive -lwsock32 -static-libgcc -static-libstdc++
+	-O3 -Wl,--no-whole-archive -lwsock32 -static-libgcc -static-libstdc++
